@@ -1,0 +1,182 @@
+:root{
+    --primary-color: #110896;
+    --secondary-color: #f00edd;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* transform: translateX(200px); */
+    transition: all 0.4s;
+    
+}
+body.shownav{
+    transform: translateX(200px);
+}
+
+nav{
+    background: var(--primary-color);
+    width: 200px;
+    height: 100vh;
+    color: #fff;
+    border-right: 2px solid rgba(200, 200, 200, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    
+}
+
+nav .logo{
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+    padding: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav ul li:first-of-type{
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+header{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    text-align: center;
+    padding: 30px 20px;
+
+    position: relative;
+}
+
+
+.toggle{
+    background: rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.toggle:focus{
+    outline: 0;
+}
+
+header h1{
+    margin: 0;
+}
+
+header p{
+    margin: 30px 0;
+}
+
+button, input[type="submit"]{
+    background: var(--secondary-color);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 12px 30px;
+}
+
+.btn:focus{
+    outline: 0;
+    border: 0;
+
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.modal-container{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: none;
+}
+
+.modal{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px rgba(0,0,0,0.3);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.modal .close-btn{
+    background: transparent;
+    font-size: 15px;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-header{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+
+.modal-content{
+    padding: 20px;
+}
+
+.modal-form .form-group{
+    margin: 15px 0;
+}
+
+.modal-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-group .form-input{
+    width: 100%;
+    padding: 15px;
+}
+
