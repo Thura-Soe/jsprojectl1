@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <h1>Video Player</h1>
+
+    <video src="video/sample1.mp4" id="video" class="screen" controls poster="img/poster.png"></video>
+
+    <div class="controls">
+        <button id="play" class="btn"><i class="fas fa-play"></i></button>
+        <button id="stop" class="btn"><i class="fas fa-stop"></i></button>
+        <input type="range" name="progress" id="progress" class="form-range" min="0" max="100" step="0.1" value="0" />
+        <span id="timestamp" class="timestamp">00 : 00</span>
+    </div>
+
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
